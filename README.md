@@ -10,7 +10,7 @@ I have implemented first three functionalities which are
     
 These all first three problems I was able to complete on 07/04/2019. However I was facing the problem in the code for completing the 
 comment feature part. I have solved that issue and uploaded the the complete solution. But the partwise solution was submitted last time.
-Also I was facing problems in accessing some github commands so this time I have reloved and reinstalled the git and uploaded them again..
+Also I was facing problems in accessing some github commands so this time I have reinstalled the git and uploaded them again..
 I have created branches for;
 
 branch1: for the solution of Issue with accessing images with similar names
