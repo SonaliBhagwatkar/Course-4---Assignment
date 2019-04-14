@@ -49,6 +49,8 @@ public class ImageRepository {
     //The method creates an instance of EntityManager
     //Executes JPQL query to fetch the image from the database with corresponding title
     //Returns the image in case the image is found in the database
+    //Also resolves the issue related to navigation of the images having same titles
+    //In case the image titles are same then navigated image will be displayed
     //Returns null if no image is found in the database
     public Image getImageByTitle(Integer id, String title) {
         EntityManager em = emf.createEntityManager();
@@ -101,7 +103,6 @@ public class ImageRepository {
     public void deleteImage(Integer imageId) {
         EntityManager em = emf.createEntityManager();
         EntityTransaction transaction = em.getTransaction();
-
         try {
             transaction.begin();
             Image image = em.find(Image.class, imageId);

@@ -20,7 +20,6 @@ public class UserRepository {
     public void registerUser(User newUser) {
         EntityManager em = emf.createEntityManager();
         EntityTransaction transaction = em.getTransaction();
-
         try {
             transaction.begin();
             //persist() method changes the state of the model object from transient state to persistence state
